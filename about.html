@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Ember &amp; Oak</title>
+  <meta name="description" content="The story behind Ember & Oak — a fire-side restaurant built on seasonal cooking, craft cocktails and warm hospitality. Meet the team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Ember and Oak home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2c1.5 3.5-1 5-1 7a3.5 3.5 0 0 0 7 .6C19.5 13 21 14.6 21 17a9 9 0 0 1-18 0c0-3.6 2.2-5.8 4-8 1.6-2 3.6-4 5-7z"/>
+          </svg>
+        </span>
+        <span class="brand-name">Ember&nbsp;&amp;&nbsp;Oak</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="index.html#new-dishes">New Dishes</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="about.html" aria-current="page">About Us</a>
+        <a href="index.html#reservation">Reservations</a>
+        <a href="index.html#hours">Opening Hours</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#reservation" class="btn btn-gold nav-cta">Book a Table</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero-bg" role="img" aria-label="Set restaurant table ready for guests"
+      style="background-image:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=2000&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container page-hero-content">
+      <p class="eyebrow light">About us</p>
+      <h1 class="page-hero-title reveal">Built on fire &amp; <span class="text-gold">hospitality</span></h1>
+      <p class="page-hero-sub reveal">One wood-fired kitchen, one long oak table, and a team that treats every guest like a regular.</p>
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="section section-cream" id="story">
+    <div class="container story-grid">
+      <div class="story-media reveal">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1100&q=80" alt="Chef cooking over an open flame" loading="lazy" />
+        <div class="story-badge">
+          <strong>Est. 2014</strong>
+          <span>Riverside District</span>
+        </div>
+      </div>
+      <div class="story-text reveal">
+        <p class="eyebrow">Our story</p>
+        <h2 class="section-title">It started with one grill and twelve chairs</h2>
+        <p>In 2014, chef Rafael Ocampo traded a white-tablecloth kitchen for a converted warehouse and a single oak-fired grill. The menu had twelve dishes, the room had twelve chairs, and by winter there was a waitlist for all of them.</p>
+        <p>The idea never changed: cook everything over live fire, buy from people we know by name, and treat service like hosting friends rather than serving customers. A decade later the room is bigger — the grill is still the heart of it.</p>
+        <ul class="story-points">
+          <li>Every dish touches oak, ember or smoke</li>
+          <li>Producers within 120 km supply 80% of our ingredients</li>
+          <li>Zero-waste kitchen since 2021</li>
+        </ul>
+        <a href="index.html#menu" class="btn btn-dark">See what we're cooking</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section section-dark stats-strip">
+    <div class="container stats-grid">
+      <div class="stat reveal"><strong>11</strong><span>Years by the fire</span></div>
+      <div class="stat reveal"><strong>40+</strong><span>Seasonal dishes a year</span></div>
+      <div class="stat reveal"><strong>120k</strong><span>Guests welcomed</span></div>
+      <div class="stat reveal"><strong>18</strong><span>Team members</span></div>
+    </div>
+  </section>
+
+  <!-- ============ VALUES ============ -->
+  <section class="section section-cream" id="values">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">What we believe</p>
+        <h2 class="section-title">Three things we never compromise</h2>
+        <p class="section-sub">They shape every plate, pour and hello at the door.</p>
+      </div>
+
+      <div class="values-grid">
+        <article class="value-card reveal">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3.5-1 5-1 7a3.5 3.5 0 0 0 7 .6C19.5 13 21 14.6 21 17a9 9 0 0 1-18 0c0-3.6 2.2-5.8 4-8 1.6-2 3.6-4 5-7z"/></svg>
+          </span>
+          <h3>Fire-first cooking</h3>
+          <p>No gas, no shortcuts. Oak embers, live flame and smoke build the flavor that defines every dish we serve.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 14 13 12"/></svg>
+          </span>
+          <h3>Seasonal &amp; local</h3>
+          <p>The menu changes with the fields and the coast around us. If it isn't in season within 120 km, it isn't on the plate.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7z"/></svg>
+          </span>
+          <h3>Hospitality first</h3>
+          <p>Names remembered, allergies noted, celebrations quietly planned. The warm room is as much our recipe as anything we cook.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="section section-dark" id="team">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow light">The people</p>
+          <h2 class="section-title">Meet the crew</h2>
+          <p class="section-sub">The faces behind the flame — from the pass to the pastry section.</p>
+        </div>
+        <a href="index.html#contact" class="btn btn-ghost">Work with us</a>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="team-media">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?auto=format&fit=crop&w=800&q=80" alt="Executive chef in a tall chef's hat" loading="lazy" />
+          </div>
+          <div class="team-body">
+            <h3>Rafael Ocampo</h3>
+            <span class="team-role">Executive Chef &amp; Founder</span>
+            <p>Grew up in his grandmother's wood-fired kitchen. Still tastes every sauce before service.</p>
+          </div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="team-media">
+            <img src="https://images.unsplash.com/photo-1622021142947-da7dedc7c39a?auto=format&fit=crop&w=800&q=80" alt="Head chef working the kitchen pass" loading="lazy" />
+          </div>
+          <div class="team-body">
+            <h3>Emil Novak</h3>
+            <span class="team-role">Head Chef</span>
+            <p>Runs the pass with calm precision and a love for anything cooked slowly over embers.</p>
+          </div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="team-media">
+            <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=800&q=80" alt="Pastry chef in a red apron" loading="lazy" />
+          </div>
+          <div class="team-body">
+            <h3>Tom Aldridge</h3>
+            <span class="team-role">Pastry Chef</span>
+            <p>Former bakery owner, current obsessed-with-fermentation dessert maker. Ask him about his sourdough.</p>
+          </div>
+        </article>
+
+        <article class="team-card team-join reveal">
+          <div class="team-media">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Two cooks preparing a dish together" loading="lazy" />
+          </div>
+          <div class="team-body">
+            <h3>Join the crew</h3>
+            <span class="team-role">We're hiring</span>
+            <p>Passionate about fire, food or making people feel at home? We'd love to meet you.</p>
+            <a href="index.html#contact" class="btn btn-gold btn-sm">Get in touch</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner">
+    <div class="cta-bg" role="img" aria-label="Warm restaurant interior with candlelight"
+      style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=2000&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container cta-content">
+      <h2 class="reveal">Come taste our story</h2>
+      <p class="reveal">The best way to understand Ember &amp; Oak is to pull up a chair by the fire.</p>
+      <div class="hero-actions reveal">
+        <a href="index.html#reservation" class="btn btn-gold btn-lg">Reserve a Table</a>
+        <a href="index.html#menu" class="btn btn-ghost btn-lg">Explore the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2c1.5 3.5-1 5-1 7a3.5 3.5 0 0 0 7 .6C19.5 13 21 14.6 21 17a9 9 0 0 1-18 0c0-3.6 2.2-5.8 4-8 1.6-2 3.6-4 5-7z"/>
+              </svg>
+            </span>
+            <span class="brand-name">Ember&nbsp;&amp;&nbsp;Oak</span>
+          </a>
+          <p>Modern fire-side dining in the heart of the Riverside District. Seasonal plates, slow cocktails, warm rooms.</p>
+          <div class="socials">
+            <a href="#" class="social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4L4 20"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#new-dishes">New Dishes</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#reservation">Reservations</a></li>
+            <li><a href="index.html#hours">Opening Hours</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="footer-hours">
+            <li><span>Mon — Thu</span><span>12:00 – 22:00</span></li>
+            <li><span>Friday</span><span>12:00 – 23:00</span></li>
+            <li><span>Saturday</span><span>10:00 – 23:00</span></li>
+            <li><span>Sunday</span><span>10:00 – 21:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Stay in the loop</h4>
+          <p>Seasonal menu drops, chef's table nights and quiet member offers. One email a month, no noise.</p>
+          <form class="news-form" id="newsForm">
+            <input type="email" id="newsEmail" placeholder="Your email address" required aria-label="Email address" />
+            <button type="submit" class="btn btn-gold" aria-label="Subscribe">Subscribe</button>
+          </form>
+          <p class="news-success" id="newsSuccess" hidden>You're on the list — see you in your inbox. 💌</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Ember &amp; Oak Restaurant. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
