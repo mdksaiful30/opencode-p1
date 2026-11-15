@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ember &amp; Oak — Modern Fire-Side Dining</title>
+  <meta name="description" content="Ember & Oak is a modern restaurant serving fire-grilled seasonal dishes, craft cocktails and warm hospitality. Explore our menu, new dishes and reserve your table." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Ember and Oak home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2c1.5 3.5-1 5-1 7a3.5 3.5 0 0 0 7 .6C19.5 13 21 14.6 21 17a9 9 0 0 1-18 0c0-3.6 2.2-5.8 4-8 1.6-2 3.6-4 5-7z"/>
+          </svg>
+        </span>
+        <span class="brand-name">Ember&nbsp;&amp;&nbsp;Oak</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="#new-dishes">New Dishes</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservations</a>
+        <a href="#hours">Opening Hours</a>
+        <a href="#contact">Contact</a>
+        <a href="#reservation" class="btn btn-gold nav-cta">Book a Table</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" role="img" aria-label="Beautifully plated fine dining dish"
+      style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <p class="eyebrow light">Modern fire-side dining · Est. 2014</p>
+      <h1 class="hero-title reveal">Where fire meets <span class="text-gold">flavor</span></h1>
+      <p class="hero-sub reveal">Seasonal plates cooked over open flame, craft cocktails poured slow, and a room designed for lingering. This is Ember &amp; Oak.</p>
+      <div class="hero-actions reveal">
+        <a href="#reservation" class="btn btn-gold btn-lg">Reserve a Table</a>
+        <a href="#menu" class="btn btn-ghost btn-lg">Explore the Menu</a>
+      </div>
+      <ul class="hero-stats reveal">
+        <li><strong>4.9★</strong><span>Guest rating</span></li>
+        <li><strong>12</strong><span>New dishes this season</span></li>
+        <li><strong>Open till 11 PM</strong><span>Kitchen &amp; bar</span></li>
+      </ul>
+    </div>
+
+    <a href="#new-dishes" class="hero-scroll" aria-label="Scroll to new dishes">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ NEW DISHES ============ -->
+  <section class="section section-cream" id="new-dishes">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">New on the menu</p>
+          <h2 class="section-title">Fresh from the kitchen</h2>
+          <p class="section-sub">Our chef's newest obsessions — plated for the first time this season and already guest favorites.</p>
+        </div>
+        <a href="#menu" class="btn btn-outline">View Full Menu</a>
+      </div>
+
+      <div class="dish-grid">
+        <article class="dish-card reveal">
+          <div class="dish-media">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Ember-grilled short rib with glaze" loading="lazy" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-row"><h3>Ember-Grilled Short Rib</h3><span class="price">$34</span></div>
+            <p>48-hour braised, finished over oak coals with smoked bone-marrow butter and charred shallot.</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-media">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80" alt="Miso glazed salmon with herbs" loading="lazy" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-row"><h3>Miso-Glazed Salmon</h3><span class="price">$26</span></div>
+            <p>Line-caught salmon lacquered in white miso, sushi rice, pak choi and toasted sesame.</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-media">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=900&q=80" alt="Wild mushroom risotto" loading="lazy" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-row"><h3>Wild Mushroom Risotto</h3><span class="price">$22</span></div>
+            <p>Carnaroli rice, foraged mushrooms, aged parmesan and a whisper of truffle oil.</p>
+          </div>
+        </article>
+
+        <article class="dish-card reveal">
+          <div class="dish-media">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Chocolate dessert with berries" loading="lazy" />
+            <span class="badge-new">New</span>
+          </div>
+          <div class="dish-body">
+            <div class="dish-row"><h3>Gold-Dusted Fondant</h3><span class="price">$11</span></div>
+            <p>Molten 70% chocolate fondant, salted caramel core, gold dust and crème fraîche.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section section-dark" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow light">Our kitchen</p>
+          <h2 class="section-title">The Menu</h2>
+          <p class="section-sub">Everything is cooked over live fire and built around whatever the season gives us. Nine menus, three at a time — use the arrows to slide through them all.</p>
+        </div>
+        <div class="menu-nav">
+          <button class="menu-btn" id="menuPrev" type="button" aria-label="Previous menus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="menu-btn" id="menuNext" type="button" aria-label="Next menus">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-track" id="menuTrack" role="region" aria-label="Menu categories">
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80" alt="Charred starters over fire" loading="lazy" />
+            <h3>Starters</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Charred Sourdough &amp; Whipped Butter</span><span class="dots"></span><span class="mi-price">$7</span></div><p class="mi-desc">House loaf, smoked sea salt</p></li>
+            <li><div class="mi"><span class="mi-name">Burrata &amp; Heirloom Tomato</span><span class="dots"></span><span class="mi-price">$14</span></div><p class="mi-desc">Basil oil, aged balsamic</p></li>
+            <li><div class="mi"><span class="mi-name">Crispy Calamari</span><span class="dots"></span><span class="mi-price">$12</span></div><p class="mi-desc">Lemon aioli, charred lemon</p></li>
+            <li><div class="mi"><span class="mi-name">Roasted Pumpkin Soup</span><span class="dots"></span><span class="mi-price">$10</span></div><p class="mi-desc">Toasted seeds, brown butter</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=400&q=80" alt="Grilled steak sliced on a board" loading="lazy" />
+            <h3>Mains</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Dry-Aged Ribeye 300g</span><span class="dots"></span><span class="mi-price">$38</span></div><p class="mi-desc">Bone-marrow butter, ember onions</p></li>
+            <li><div class="mi"><span class="mi-name">Ember-Grilled Half Chicken</span><span class="dots"></span><span class="mi-price">$24</span></div><p class="mi-desc">Herb jus, burnt lemon</p></li>
+            <li><div class="mi"><span class="mi-name">Handmade Tagliatelle Ragù</span><span class="dots"></span><span class="mi-price">$23</span></div><p class="mi-desc">Slow-braised beef, parmesan</p></li>
+            <li><div class="mi"><span class="mi-name">Miso-Glazed Salmon</span><span class="dots"></span><span class="mi-price">$26</span></div><p class="mi-desc">Sushi rice, pak choi, sesame</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=400&q=80" alt="Sweet dessert plated with fruit" loading="lazy" />
+            <h3>Desserts</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Gold-Dusted Chocolate Fondant</span><span class="dots"></span><span class="mi-price">$11</span></div><p class="mi-desc">Salted caramel, crème fraîche</p></li>
+            <li><div class="mi"><span class="mi-name">Burnt Basque Cheesecake</span><span class="dots"></span><span class="mi-price">$10</span></div><p class="mi-desc">Macerated berries</p></li>
+            <li><div class="mi"><span class="mi-name">Vanilla Bean Panna Cotta</span><span class="dots"></span><span class="mi-price">$9</span></div><p class="mi-desc">Honeycomb, citrus</p></li>
+            <li><div class="mi"><span class="mi-name">Affogato</span><span class="dots"></span><span class="mi-price">$8</span></div><p class="mi-desc">Double espresso, vanilla gelato</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=400&q=80" alt="Craft cocktail being poured" loading="lazy" />
+            <h3>Drinks</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Signature Ember Old Fashioned</span><span class="dots"></span><span class="mi-price">$14</span></div><p class="mi-desc">Smoked bourbon, burnt orange</p></li>
+            <li><div class="mi"><span class="mi-name">Barrel-Aged Negroni</span><span class="dots"></span><span class="mi-price">$13</span></div><p class="mi-desc">60 days in oak</p></li>
+            <li><div class="mi"><span class="mi-name">House Red / White</span><span class="dots"></span><span class="mi-price">$9</span></div><p class="mi-desc">Glass · small-producer wine</p></li>
+            <li><div class="mi"><span class="mi-name">Craft Lager / Kombucha</span><span class="dots"></span><span class="mi-price">$7</span></div><p class="mi-desc">Local breweries</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=400&q=80" alt="Fluffy pancakes with toppings" loading="lazy" />
+            <h3>Weekend Brunch</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Buttermilk Pancake Stack</span><span class="dots"></span><span class="mi-price">$13</span></div><p class="mi-desc">Maple, honey butter, crisp bacon</p></li>
+            <li><div class="mi"><span class="mi-name">Shakshuka Ember Skillet</span><span class="dots"></span><span class="mi-price">$14</span></div><p class="mi-desc">Baked eggs, spiced tomato, sourdough</p></li>
+            <li><div class="mi"><span class="mi-name">Crab &amp; Chive Benedict</span><span class="dots"></span><span class="mi-price">$17</span></div><p class="mi-desc">Lemon hollandaise, chive oil</p></li>
+            <li><div class="mi"><span class="mi-name">Bottomless Batch Brew</span><span class="dots"></span><span class="mi-price">$6</span></div><p class="mi-desc">Free refills until 15:00</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=400&q=80" alt="Elegant plated seafood dish" loading="lazy" />
+            <h3>From the Sea</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Seared Scallops</span><span class="dots"></span><span class="mi-price">$21</span></div><p class="mi-desc">Cauliflower purée, brown butter</p></li>
+            <li><div class="mi"><span class="mi-name">Octopus a la Plancha</span><span class="dots"></span><span class="mi-price">$19</span></div><p class="mi-desc">Smoked paprika, potato confit</p></li>
+            <li><div class="mi"><span class="mi-name">Whole Grilled Branzino</span><span class="dots"></span><span class="mi-price">$28</span></div><p class="mi-desc">Salsa verde, charred lemon</p></li>
+            <li><div class="mi"><span class="mi-name">Lobster Roll</span><span class="dots"></span><span class="mi-price">$24</span></div><p class="mi-desc">Brioche, tarragon aioli, thin fries</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=400&q=80" alt="Fresh salad bowl with greens" loading="lazy" />
+            <h3>Salads &amp; Sides</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Ember Caesar</span><span class="dots"></span><span class="mi-price">$12</span></div><p class="mi-desc">Grilled gem lettuce, anchovy dressing</p></li>
+            <li><div class="mi"><span class="mi-name">Beet &amp; Whipped Feta</span><span class="dots"></span><span class="mi-price">$11</span></div><p class="mi-desc">Pistachio, hot honey</p></li>
+            <li><div class="mi"><span class="mi-name">Charred Broccolini</span><span class="dots"></span><span class="mi-price">$9</span></div><p class="mi-desc">Chili crunch, lemon</p></li>
+            <li><div class="mi"><span class="mi-name">Duck-Fat Potatoes</span><span class="dots"></span><span class="mi-price">$8</span></div><p class="mi-desc">Rosemary salt</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=400&q=80" alt="Street-style sharing tacos" loading="lazy" />
+            <h3>Sharing Plates</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Baja Fish Tacos</span><span class="dots"></span><span class="mi-price">$15</span></div><p class="mi-desc">Slaw, chipotle crema</p></li>
+            <li><div class="mi"><span class="mi-name">Wood-Fired Flatbread</span><span class="dots"></span><span class="mi-price">$10</span></div><p class="mi-desc">Whipped ricotta, hot honey</p></li>
+            <li><div class="mi"><span class="mi-name">Ember Chicken Wings</span><span class="dots"></span><span class="mi-price">$13</span></div><p class="mi-desc">Charred glaze, blue cheese dip</p></li>
+            <li><div class="mi"><span class="mi-name">Grilled Corn Ribs</span><span class="dots"></span><span class="mi-price">$8</span></div><p class="mi-desc">Lime mayo, cotija</p></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-head">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80" alt="Juicy smash burger with fries" loading="lazy" />
+            <h3>Little Guests</h3>
+          </div>
+          <ul class="menu-list">
+            <li><div class="mi"><span class="mi-name">Mini Smash Burger</span><span class="dots"></span><span class="mi-price">$9</span></div><p class="mi-desc">With fries &amp; fruit</p></li>
+            <li><div class="mi"><span class="mi-name">Honey Chicken Skewers</span><span class="dots"></span><span class="mi-price">$8</span></div><p class="mi-desc">Steamed rice</p></li>
+            <li><div class="mi"><span class="mi-name">Mac &amp; Cheese Cup</span><span class="dots"></span><span class="mi-price">$7</span></div><p class="mi-desc">Crispy crumb top</p></li>
+            <li><div class="mi"><span class="mi-name">Scoop of the Day</span><span class="dots"></span><span class="mi-price">$4</span></div><p class="mi-desc">Vanilla gelato or sorbet</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-dots" id="menuDots"></div>
+
+      <p class="menu-note">All prices include VAT. A 10% service charge applies to parties of six or more. Please tell us about allergies — our kitchen is happy to adapt.</p>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION ============ -->
+  <section class="section section-cream" id="reservation">
+    <div class="container res-grid">
+      <div class="res-side reveal">
+        <div class="res-media">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Warm restaurant dining room" loading="lazy" />
+          <div class="res-quote">
+            <p>"The best table in the city — the short rib alone is worth the trip."</p>
+            <span>— City Eats Review</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="res-form-wrap reveal">
+        <p class="eyebrow">Reservations</p>
+        <h2 class="section-title">Book your table</h2>
+        <p class="section-sub">Tables are held for 15 minutes past your booking time. For groups of 8+, call us directly.</p>
+
+        <form class="res-form" id="resForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="rName">Full name</label>
+              <input type="text" id="rName" name="name" placeholder="Alex Morgan" required autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="rPhone">Phone</label>
+              <input type="tel" id="rPhone" name="phone" placeholder="+1 (555) 000-0000" required autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="rDate">Date</label>
+              <input type="date" id="rDate" name="date" required />
+            </div>
+            <div class="field">
+              <label for="rTime">Time</label>
+              <select id="rTime" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option>12:00</option><option>13:00</option><option>14:00</option>
+                <option>17:30</option><option>18:00</option><option>18:30</option>
+                <option>19:00</option><option>19:30</option><option>20:00</option>
+                <option>20:30</option><option>21:00</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="rGuests">Guests</label>
+              <select id="rGuests" name="guests" required>
+                <option value="" disabled selected>How many?</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="rNotes">Special requests <span class="optional">(optional)</span></label>
+            <textarea id="rNotes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preference…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-lg btn-block">Confirm Reservation</button>
+          <p class="res-fineprint">No deposit required · Free cancellation up to 2 hours before</p>
+        </form>
+
+        <div class="res-success" id="resSuccess" hidden>
+          <span class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+          <h3>Table reserved!</h3>
+          <p id="resSuccessMsg">We can't wait to host you. A confirmation text is on its way.</p>
+          <button type="button" class="btn btn-outline" id="resAgain">Make another booking</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPENING HOURS ============ -->
+  <section class="section section-dark" id="hours">
+    <div class="container hours-grid">
+      <div class="hours-col reveal">
+        <p class="eyebrow light">Plan your visit</p>
+        <h2 class="section-title">Opening hours</h2>
+
+        <div class="open-pill-wrap">
+          <span class="open-pill" id="openPill">
+            <span class="dot" aria-hidden="true"></span>
+            <span id="openPillText">Checking hours…</span>
+          </span>
+        </div>
+
+        <ul class="hours-list">
+          <li><span class="day">Monday — Thursday</span><span class="time">12:00 – 22:00</span></li>
+          <li><span class="day">Friday</span><span class="time">12:00 – 23:00</span></li>
+          <li><span class="day">Saturday</span><span class="time">10:00 – 23:00</span></li>
+          <li><span class="day">Sunday</span><span class="time">10:00 – 21:00</span></li>
+        </ul>
+
+        <div class="hours-notes">
+          <p><strong>Weekend brunch</strong> — Saturday &amp; Sunday from 10:00, bottomless coffee included.</p>
+          <p><strong>Late bar</strong> — Friday &amp; Saturday the bar stays open until 01:00.</p>
+          <p><strong>Bank holidays</strong> — Hours may vary; check our socials for updates.</p>
+        </div>
+      </div>
+
+      <div class="hours-media reveal">
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1200&q=80" alt="Restaurant glowing at night" loading="lazy" />
+        <div class="hours-media-card">
+          <span class="hm-title">Last orders</span>
+          <span class="hm-sub">Kitchen takes final orders 30 minutes before closing.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-cream" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-col reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="section-title">Contact us</h2>
+        <p class="section-sub">Questions, private events, press — we'd love to hear from you.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="c-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <span class="c-label">Visit us</span>
+              <a href="https://maps.google.com/?q=12+Harbor+Lane" target="_blank" rel="noopener">12 Harbor Lane, Riverside District</a>
+            </div>
+          </li>
+          <li>
+            <span class="c-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+            </span>
+            <div>
+              <span class="c-label">Call us</span>
+              <a href="tel:+15550001234">+1 (555) 000-1234</a>
+            </div>
+          </li>
+          <li>
+            <span class="c-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </span>
+            <div>
+              <span class="c-label">Email</span>
+              <a href="mailto:hello@emberandoak.com">hello@emberandoak.com</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="socials">
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4L4 20"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-media reveal">
+        <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=1200&q=80" alt="Cozy candle-lit restaurant interior" loading="lazy" />
+        <div class="contact-media-card">
+          <span class="hm-title">Find us</span>
+          <span class="hm-sub">Two minutes from Riverside Station · Valet parking after 6 PM</span>
+          <a href="https://maps.google.com/?q=12+Harbor+Lane" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2c1.5 3.5-1 5-1 7a3.5 3.5 0 0 0 7 .6C19.5 13 21 14.6 21 17a9 9 0 0 1-18 0c0-3.6 2.2-5.8 4-8 1.6-2 3.6-4 5-7z"/>
+              </svg>
+            </span>
+            <span class="brand-name">Ember&nbsp;&amp;&nbsp;Oak</span>
+          </a>
+          <p>Modern fire-side dining in the heart of the Riverside District. Seasonal plates, slow cocktails, warm rooms.</p>
+          <div class="socials">
+            <a href="#" class="social" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4L4 20"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#new-dishes">New Dishes</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+            <li><a href="#hours">Opening Hours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="footer-hours">
+            <li><span>Mon — Thu</span><span>12:00 – 22:00</span></li>
+            <li><span>Friday</span><span>12:00 – 23:00</span></li>
+            <li><span>Saturday</span><span>10:00 – 23:00</span></li>
+            <li><span>Sunday</span><span>10:00 – 21:00</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Stay in the loop</h4>
+          <p>Seasonal menu drops, chef's table nights and quiet member offers. One email a month, no noise.</p>
+          <form class="news-form" id="newsForm">
+            <input type="email" id="newsEmail" placeholder="Your email address" required aria-label="Email address" />
+            <button type="submit" class="btn btn-gold" aria-label="Subscribe">Subscribe</button>
+          </form>
+          <p class="news-success" id="newsSuccess" hidden>You're on the list — see you in your inbox. 💌</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Ember &amp; Oak Restaurant. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
