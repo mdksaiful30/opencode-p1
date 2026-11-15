@@ -51,6 +51,8 @@ body {
 }
 
 img { display: block; max-width: 100%; }
+/* author display rules (grid/flex) must never defeat the hidden attribute */
+[hidden] { display: none !important; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -447,7 +449,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: clamp(32px, 5vw, 64px);
-  align-items: start;
+  align-items: stretch; /* image and form always share the same height */
 }
 
 .res-media {
@@ -456,6 +458,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   min-height: 480px;
+  height: 100%;
 }
 .res-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
@@ -472,8 +475,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .res-quote p { font-family: var(--font-display); font-weight: 600; font-size: 1.02rem; line-height: 1.4; }
 .res-quote span { display: block; margin-top: 8px; font-size: 0.8rem; color: var(--gold-strong); letter-spacing: 0.08em; text-transform: uppercase; }
 
-.res-form-wrap { position: relative; }
-.res-form-wrap .section-title { font-size: clamp(1.9rem, 3.4vw, 2.5rem); }
+.res-form-wrap { position: relative; display: grid; align-content: center; gap: 14px; }
 
 .res-form {
   margin-top: 30px;

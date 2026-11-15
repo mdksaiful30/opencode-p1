@@ -272,75 +272,79 @@
 
   <!-- ============ RESERVATION ============ -->
   <section class="section section-cream" id="reservation">
-    <div class="container res-grid">
-      <div class="res-side reveal">
-        <div class="res-media">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Warm restaurant dining room" loading="lazy" />
-          <div class="res-quote">
-            <p>"The best table in the city — the short rib alone is worth the trip."</p>
-            <span>— City Eats Review</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="res-form-wrap reveal">
+    <div class="container">
+      <div class="section-head center reveal">
         <p class="eyebrow">Reservations</p>
         <h2 class="section-title">Book your table</h2>
         <p class="section-sub">Tables are held for 15 minutes past your booking time. For groups of 8+, call us directly.</p>
+      </div>
 
-        <form class="res-form" id="resForm" novalidate>
-          <div class="field-row">
-            <div class="field">
-              <label for="rName">Full name</label>
-              <input type="text" id="rName" name="name" placeholder="Alex Morgan" required autocomplete="name" />
-            </div>
-            <div class="field">
-              <label for="rPhone">Phone</label>
-              <input type="tel" id="rPhone" name="phone" placeholder="+1 (555) 000-0000" required autocomplete="tel" />
-            </div>
-          </div>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="rDate">Date</label>
-              <input type="date" id="rDate" name="date" required />
-            </div>
-            <div class="field">
-              <label for="rTime">Time</label>
-              <select id="rTime" name="time" required>
-                <option value="" disabled selected>Select time</option>
-                <option>12:00</option><option>13:00</option><option>14:00</option>
-                <option>17:30</option><option>18:00</option><option>18:30</option>
-                <option>19:00</option><option>19:30</option><option>20:00</option>
-                <option>20:30</option><option>21:00</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="rGuests">Guests</label>
-              <select id="rGuests" name="guests" required>
-                <option value="" disabled selected>How many?</option>
-                <option>1</option><option>2</option><option>3</option><option>4</option>
-                <option>5</option><option>6</option><option>7</option><option>8+</option>
-              </select>
+      <div class="res-grid">
+        <div class="res-side reveal">
+          <div class="res-media">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Warm restaurant dining room" loading="lazy" />
+            <div class="res-quote">
+              <p>"The best table in the city — the short rib alone is worth the trip."</p>
+              <span>— City Eats Review</span>
             </div>
           </div>
+        </div>
 
-          <div class="field">
-            <label for="rNotes">Special requests <span class="optional">(optional)</span></label>
-            <textarea id="rNotes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preference…"></textarea>
+        <div class="res-form-wrap reveal">
+          <form class="res-form" id="resForm" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="rName">Full name</label>
+                <input type="text" id="rName" name="name" placeholder="Alex Morgan" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="rPhone">Phone</label>
+                <input type="tel" id="rPhone" name="phone" placeholder="+1 (555) 000-0000" required autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="rDate">Date</label>
+                <input type="date" id="rDate" name="date" required />
+              </div>
+              <div class="field">
+                <label for="rTime">Time</label>
+                <select id="rTime" name="time" required>
+                  <option value="" disabled selected>Select time</option>
+                  <option>12:00</option><option>13:00</option><option>14:00</option>
+                  <option>17:30</option><option>18:00</option><option>18:30</option>
+                  <option>19:00</option><option>19:30</option><option>20:00</option>
+                  <option>20:30</option><option>21:00</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="rGuests">Guests</label>
+                <select id="rGuests" name="guests" required>
+                  <option value="" disabled selected>How many?</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="rNotes">Special requests <span class="optional">(optional)</span></label>
+              <textarea id="rNotes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preference…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark btn-lg btn-block">Confirm Reservation</button>
+            <p class="res-fineprint">No deposit required · Free cancellation up to 2 hours before</p>
+          </form>
+
+          <div class="res-success" id="resSuccess" hidden>
+            <span class="success-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <h3>Table reserved!</h3>
+            <p id="resSuccessMsg">We can't wait to host you. A confirmation text is on its way.</p>
+            <button type="button" class="btn btn-outline" id="resAgain">Make another booking</button>
           </div>
-
-          <button type="submit" class="btn btn-dark btn-lg btn-block">Confirm Reservation</button>
-          <p class="res-fineprint">No deposit required · Free cancellation up to 2 hours before</p>
-        </form>
-
-        <div class="res-success" id="resSuccess" hidden>
-          <span class="success-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          </span>
-          <h3>Table reserved!</h3>
-          <p id="resSuccessMsg">We can't wait to host you. A confirmation text is on its way.</p>
-          <button type="button" class="btn btn-outline" id="resAgain">Make another booking</button>
         </div>
       </div>
     </div>
